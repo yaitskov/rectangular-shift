@@ -1,0 +1,18 @@
+{
+  "nixpkgs": {
+    "type": "git",
+    "branch": "master",
+    "repo": "/home/dan/pro/nixpkgs",
+    "rev": "da5af46a09eeb2b1c8f4193d626727d5b7460601"
+  },
+  "hamacs": {
+    "type": "local",
+    "path": "/home/dan/pro/haskell/my/hamacs"
+  },
+  "hamacs": {
+    "type": "git",
+    "branch": "master",
+    "repo": "/home/dan/pro/haskell/my/hamacs",
+    "rev": "78f5ca4ff4b1c25100e7356785970d1deaf3ca59"
+  }
+}

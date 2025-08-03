@@ -1,0 +1,10 @@
+/result
+.haddock-ref
+/dist-newstyle
+*#
+*.so
+/design
+/log
+log.org
+/result*
+/.git.bak

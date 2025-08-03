@@ -1,0 +1,35 @@
+cabal-version: 3.8
+name: rectangular-shift
+synopsis: indent lines by Emacs rectangular
+version: 0.0.1
+build-type: Simple
+license: GPL-3.0-only
+license-file: LICENSE
+copyright: 2025 Daniil Iaitskov
+maintainer: dyaitskov@gmail.com
+category: Emacs
+author: Daniil Iaitskov
+homepage: http://github.com/yaitskov/rectangular-shift
+
+source-repository head
+    type: git
+    location: https://github.com/yaitskov/rectangular-shift
+
+library
+  hs-source-dirs: .
+  ghc-options: -Wall -threaded
+  default-language: GHC2024
+  exposed-modules:
+    Lib
+  build-depends:
+    , generic-lens < 3
+    , hamacs < 1
+    , lens < 6
+    , minmax < 1
+    , relude < 2
+  default-extensions:
+    BlockArguments
+    NoImplicitPrelude
+    OverloadedLabels
+    OverloadedRecordDot
+    OverloadedStrings
