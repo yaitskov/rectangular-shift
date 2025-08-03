@@ -1,6 +1,8 @@
 { system ? builtins.currentSystem or "x86_64-linux"
 , ghc ? "ghc9122"
-, sources ? import ./nix/sources.nix
+, sources ? import (if builtins.pathExists /home/dan/pro/nixpkgs
+                    then ./nix/offline/sources.nix
+                    else ./nix/sources.nix)
 }:
 let
   np = import sources.nixpkgs {

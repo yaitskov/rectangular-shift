@@ -1,18 +1,24 @@
 {
-  "nixpkgs": {
-    "type": "git",
-    "branch": "master",
-    "repo": "/home/dan/pro/nixpkgs",
-    "rev": "da5af46a09eeb2b1c8f4193d626727d5b7460601"
-  },
-  "hamacs": {
-    "type": "local",
-    "path": "/home/dan/pro/haskell/my/hamacs"
-  },
-  "hamacs": {
-    "type": "git",
-    "branch": "master",
-    "repo": "/home/dan/pro/haskell/my/hamacs",
-    "rev": "78f5ca4ff4b1c25100e7356785970d1deaf3ca59"
-  }
+    "hamacs": {
+        "branch": "master",
+        "description": "Emacs module for running Haskell as an alternative embedded scripting language ",
+        "homepage": null,
+        "owner": "yaitskov",
+        "repo": "hamacs",
+        "rev": "1c141f4a9bc79a17d26cca88e2ec677a28d10061",
+        "sha256": "0n8nlh3qyv73kvkfhkn7x5d7hq4lzpv34lh1wdqw4bpapxb31zfk",
+        "type": "tarball",
+        "url": "https://github.com/yaitskov/hamacs/archive/1c141f4a9bc79a17d26cca88e2ec677a28d10061.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "nixpkgs": {
+        "branch": "master",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "da5af46a09eeb2b1c8f4193d626727d5b7460601",
+        "sha256": "sha256:1hmj9mg81gy8c7v8j563793sckawyxnca60zlif7qpsri597hlhh",
+        "type": "tarball",
+        "url": "https://github.com/NixOS/nixpkgs/archive/da5af46a09eeb2b1c8f4193d626727d5b7460601.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    }
 }
