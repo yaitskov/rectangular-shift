@@ -5,9 +5,15 @@ on:
 jobs:
   tests:
     runs-on: ubuntu-latest
+    environment: CI
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v4.2.2
     - uses: cachix/install-nix-action@v31
       with:
         nix_path: nixpkgs=channel:nixos-unstable
-    - run: nix-build --extra-experimental-features pipe-operators
+    - uses: cachix/cachix-action@v16
+      with:
+        name: hamacs
+        authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
+    - run:
+        nix-build --extra-experimental-features pipe-operators
