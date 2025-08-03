@@ -24,10 +24,8 @@ let
       '';
     });
 
-  rectangular-shift =
-    emacs-integration-test
-      (dontHaddock
-        (hp.callCabal2nix "rectangular-shift" (lib.sourceByRegex ./. sourceRegexes) { }));
+  rectangular-shift = lib.pipe (hp.callCabal2nix "rectangular-shift" (lib.sourceByRegex ./. sourceRegexes) { })
+    [ emacs-integration-test dontHaddock ];
 
   shell = hp.shellFor {
     packages = p: [ rectangular-shift ];
